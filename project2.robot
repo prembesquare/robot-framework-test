@@ -52,8 +52,8 @@ login
     Wait Until Page Contains Element    dt_login_button    10
     Click Element    dt_login_button
     Wait Until Page Contains Element    txtEmail    10
-    Input Text    txtEmail    prem+14@besquare.com.my
-    Input Password    txtPass    Mywork1234
+    Input Text    txtEmail    email
+    Input Password    txtPass    password
     Click Element    //button[@name="login"]
 
 select profile
@@ -135,9 +135,9 @@ reactivate account
     Click Element    ${login}
     Wait For Condition	return document.readyState == "complete"
     Click Element    ${email}
-    Input Text    ${email}    prem+14@besquare.com.my
+    Input Text    ${email}    email
     Click Element    ${password}
-    Input Text    ${password}    Mywork1234
+    Input Text    ${password}    password
     Click Element    ${login_deriv.com}
     Wait For Condition	return document.readyState == "complete"
     Page Should Contain Element    ${resp_trading}
